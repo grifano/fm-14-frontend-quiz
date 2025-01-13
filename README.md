@@ -1,8 +1,9 @@
 <img src="./github_assests//grifano-logo.svg" alt="grifano logo" height="100"/>
 
 <div style="display: flex; gap: 10px; align-items: center;">
-  <img src="./github_assests/js-logo.svg" alt="javascript" height="50"/>
+  <!-- <img src="./github_assests/js-logo.svg" alt="javascript" height="50"/> -->
   <img src="./github_assests/typescript-icon.svg" alt="typescript" height="50"/>
+  <img src="./github_assests/react-logo.svg" alt="typescript" height="50"/>
   <img src="./github_assests/html-logo.svg" alt="html" height="50"/>
   <img src="./github_assests/css-logo.svg" alt="CSS" height="50"/>
   <!-- <img srdocs/github_assests/next.svg" alt="NextJS" height="50"/> -->
