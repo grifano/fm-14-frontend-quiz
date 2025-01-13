@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'Rubik';
+  src: url('/public/fonts/Rubik-Variable-Font.woff2') format('woff2-variations');
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rubik';
+  src: url('/public/fonts/Rubik-Italic-Variable-Font.woff') format('woff2-variations');
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
+  font-style: italic;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-dark-400 font-sans text-base font-bold leading-none text-dark-100 sm:text-lg;
+}
+svg {
+  fill: currentColor;
+}
+
+/* Setup toast styles */
+:root {
+  --toastify-color-success: #a4ffaf;
+  --neon-green: #a4ffaf;
+  --almost-white: #e6e5ea;
+  --almost-white: rgba(24, 23, 31, 0.1);
+}
+.toast-fixes {
+  button {
+    color: inherit;
+    opacity: 1;
+  }
+  svg {
+    fill: currentColor;
+  }
+}
+
+/* Custom range slider */
+
+@layer utilities {
+  .toast-body {
+    @apply bg-dark-300 font-mono shadow-lg;
+  }
+  .toast-success {
+    @apply text-accent-green;
+  }
+  .toast-error {
+    @apply text-accent-red;
+  }
+  .toast-warning {
+    @apply text-accent-yellow;
+  }
+  .footer-link {
+    @apply p-4 underline opacity-60 outline-none transition-opacity focus-within:opacity-100 hover:opacity-100;
+  }
+}
