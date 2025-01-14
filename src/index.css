@@ -18,7 +18,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-dark-400 font-sans text-base font-bold leading-none text-dark-100 sm:text-lg;
+  @apply font-sans text-base;
 }
 svg {
   fill: currentColor;
@@ -44,8 +44,17 @@ svg {
 /* Custom range slider */
 
 @layer utilities {
+  .background-mobile {
+    @apply bg-pattern-mobile-light dark:bg-pattern-mobile-dark ;
+  }
+   .background-tablet {
+    @apply sm:bg-pattern-tablet-light sm:dark:bg-pattern-tablet-dark;
+  }
+  .background-desktop {
+    @apply lg:dark:bg-pattern-desktop-dark lg:bg-pattern-desktop-light
+  }
   .toast-body {
-    @apply bg-dark-300 font-mono shadow-lg;
+    @apply bg-navy-100 font-mono shadow-lg;
   }
   .toast-success {
     @apply text-accent-green;
